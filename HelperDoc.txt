@@ -1,3 +1,5 @@
+The wildcard * means everything. So 'SELECT * FROM *' will get all data from all tables, and 'git add *' will add every file.
+
 SQL Reminder:
 
 SELECT columnA, columnB
@@ -6,3 +8,17 @@ WHERE columnB = 'value'
 
 After where can come other functions, such as GROUP (for aggregates, like counting/summing) or SORT.
 To get data from two tables, use JOIN. If you don't know about it, ask me as a bit more complex. 
+
+
+Git Reminder:
+Ideally add and commit after every feature addition/fix etc, as commonly as you can. 
+
+'git pull origin master' - will get any updates from GitHub that someone else has made. origin and master refer to the 'remote' and 'branch', but will always be constant for us. 
+
+'git diff' - [optional] see the difference between the last files committed, and your working copies ie see what changes you have made
+
+'git add <fileName>' - tell git to add the file to the next git commit. This stage means you can edit some files locally, without having changes saved in the next commit. It also prevents unwanted files being added to the repository, such as in our case the twitter credentials. This is why 'git add *' should be avoided. An IDE will usually do this in the background. 
+
+'git commit -m '<commit message>'' - This will 'save' your changes into a commit. Only files you have added will be committed. These are like restore points.
+
+'git push origin master' - opposite of pull, this will push all of your committed changes to GitHub. 
