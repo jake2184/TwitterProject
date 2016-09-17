@@ -1,0 +1,8 @@
+SQL Reminder:
+
+SELECT columnA, columnB
+FROM tableName
+WHERE columnB = 'value'
+
+After where can come other functions, such as GROUP (for aggregates, like counting/summing) or SORT.
+To get data from two tables, use JOIN. If you don't know about it, ask me as a bit more complex. 
