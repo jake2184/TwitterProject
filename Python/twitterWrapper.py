@@ -1,5 +1,4 @@
 #twitterWrapper.py
-from __future__ import unicode_literals
 import twitter
 
 class twitterApi:
